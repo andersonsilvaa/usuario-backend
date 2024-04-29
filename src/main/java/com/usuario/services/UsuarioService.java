@@ -35,7 +35,7 @@ public class UsuarioService {
     }
 
     @Transactional
-    public UsuarioMinDto inserir(UsuarioDto dto) {
+    public UsuarioMinDto salvar(UsuarioDto dto) {
         this.validar(dto);
         this.criptografarSenha(dto);
         Usuario entity = new Usuario(dto);

@@ -32,8 +32,8 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity<UsuarioMinDto> insert(@Valid @RequestBody UsuarioDto dto) {
-        UsuarioMinDto minDto = service.inserir(dto);
+    public ResponseEntity<UsuarioMinDto> salvar(@Valid @RequestBody UsuarioDto dto) {
+        UsuarioMinDto minDto = service.salvar(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(dto.getId()).toUri();
         return ResponseEntity.created(uri).body(minDto);
