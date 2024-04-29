@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <groupId>com.usuario</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>usuario</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>usuario-backend</name>
     <description>Cadastro de Usuário</description>
