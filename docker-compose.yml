@@ -12,7 +12,7 @@ services:
     ports:
       - '5433:5433'
 
-  recipe:
+  usuario:
     container_name: usuario_app
     build:
       context: .
